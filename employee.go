@@ -67,6 +67,7 @@ type Employee struct {
 	Pernr               string `gorm:"pernr" json:"pernr"`
 	Graid               int    `gorm:"graid" json:"graid"`
 	EmployeeType        string `gorm:"employee_type" json:"employeeType"`
+	Photo               string `json:"photo"`
 }
 
 func (Employee) TableName() string {
